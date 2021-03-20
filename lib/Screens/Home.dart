@@ -1,7 +1,7 @@
 import 'package:badges/badges.dart';
 import 'package:flutter/material.dart';
 import 'package:shukr/Screens/AdminPages/AddOrder.dart';
-import 'package:shukr/Screens/BottomNavigationBarScreens/Notifications.dart';
+//import 'package:shukr/Screens/BottomNavigationBarScreens/Notifications.dart';
 import 'package:shukr/Screens/BottomNavigationBarScreens/m.dart';
 import 'package:shukr/Screens/BottomNavigationBarScreens/matjer.dart';
 import 'package:shukr/Screens/BottomNavigationBarScreens/matjerRestaurant.dart';
@@ -77,7 +77,7 @@ class _HomeState extends State<Home> {
     HelperFunctions.saveUserAdminSharedPreference(tajerAccount);
       List<Widget> _widgetOptions = <Widget>[
       profile(),
-      Notifications(),
+        MyOrders(),
       Cart(),
       MyOrders(),
       matjerUser(false)
