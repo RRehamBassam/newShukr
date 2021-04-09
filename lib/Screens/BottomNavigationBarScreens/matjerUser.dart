@@ -1,5 +1,5 @@
 import 'dart:typed_data';
-
+import 'dart:io' show Platform;
 import 'package:flutter/material.dart';
 import 'package:grafpix/pixloaders/pix_loader.dart';
 import 'package:shukr/Screens/BottomNavigationBarScreens/OrdersAdminNotEmpty.dart';
@@ -130,7 +130,7 @@ class _matjerState extends State<matjerUser> {
   Widget BoxTop(){
     return   Container(
       padding: EdgeInsets.all(16),
-      height: SearchPersonBox?MediaQuery.of(context).size.height * 0.445: MediaQuery.of(context).size.height * 0.255,
+      height:Platform.isIOS?SearchPersonBox?MediaQuery.of(context).size.height * 0.485: MediaQuery.of(context).size.height * 0.295: SearchPersonBox?MediaQuery.of(context).size.height * 0.445: MediaQuery.of(context).size.height * 0.255,
       width:MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
         color: Color(0xffffffff),
@@ -146,7 +146,7 @@ class _matjerState extends State<matjerUser> {
         crossAxisAlignment: CrossAxisAlignment.end,
         mainAxisAlignment: MainAxisAlignment.spaceAround,
         children: [
-          SizedBox(height: 20,),
+          SizedBox(height:Platform.isIOS?18: 20,),
           Column(
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
@@ -185,17 +185,17 @@ class _matjerState extends State<matjerUser> {
 
             ],
           ),
-          SizedBox(height: 4,),
+          SizedBox(height:Platform.isIOS?3: 4,),
           Row(
             children: [
               tajerAccount? search():SearchPerson(),
-              SizedBox(width: 12,),
+              SizedBox(width:Platform.isIOS?8: 12,),
               Directionality(
                   textDirection: TextDirection.rtl,
                   child: Container(
                     padding: EdgeInsets.only(right: 16,left: 16),
-                    height:  MediaQuery.of(context).size.height * 0.07,
-                    width: MediaQuery.of(context).size.width *0.75,
+                    height: Platform.isIOS?MediaQuery.of(context).size.height * 0.067: MediaQuery.of(context).size.height * 0.07,
+                    width:Platform.isIOS?MediaQuery.of(context).size.width *0.74: MediaQuery.of(context).size.width *0.75,
                     decoration: BoxDecoration(
                       color: Color(0xfff5f6fb),borderRadius: BorderRadius.circular(8.00),
                     ),

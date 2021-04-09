@@ -223,9 +223,9 @@ List Count=[1,2,3,4,5,6,7,8,9,10];
                              FullName(),
                               new Container(
 
-                                  height: MediaQuery.of(context).size.height*0.07,
+                                  height: MediaQuery.of(context).size.height*0.06,
                                   width: MediaQuery.of(context).size.width*0.82,
-                                  padding: EdgeInsets.only(top: 8),
+                                 // padding: EdgeInsets.only(top: 8),
                                   decoration: BoxDecoration(
                                     border: Border.all(width: 1.00, color: Colors.grey[300],),
                                     borderRadius: BorderRadius.circular(8.00),
@@ -267,9 +267,9 @@ List Count=[1,2,3,4,5,6,7,8,9,10];
                                  civil_registry=val;
                                });}),
                               new Container(
-                                  height: MediaQuery.of(context).size.height*0.07,
+                                  height: MediaQuery.of(context).size.height*0.06,
                                   width: MediaQuery.of(context).size.width*0.82,
-                                  padding: EdgeInsets.only(top: 8,right: 6),
+                               //   padding: EdgeInsets.only(top: 8,right: 6),
                                   margin:EdgeInsets.only(bottom: 4) ,
                                   decoration: BoxDecoration(
                                     border: Border.all(width: 1.00, color: Colors.grey[300],),
@@ -284,7 +284,7 @@ List Count=[1,2,3,4,5,6,7,8,9,10];
                                         items: Count.map((item) {
                                           return new DropdownMenuItem(
                                             child:new Container(
-                                                height: MediaQuery.of(context).size.height*0.07,
+                                                height: MediaQuery.of(context).size.height*0.06,
                                                 width: MediaQuery.of(context).size.width*0.65,
                                                 decoration: BoxDecoration(
                                                   // border: Border.all(width: 1.00, color: Colors.grey[300],),
@@ -569,7 +569,7 @@ print (Output);
     return  backgroungtextfielid(
         Expanded(
           child: Container(
-            height: MediaQuery.of(context).size.height*0.07,
+            height: MediaQuery.of(context).size.height*0.06,
             // padding: EdgeInsets.only(top: 15),
             width: MediaQuery.of(context).size.width* 0.835,
             child: TextFormField(

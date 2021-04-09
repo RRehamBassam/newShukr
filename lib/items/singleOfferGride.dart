@@ -4,6 +4,7 @@ import 'package:shukr/Screens/Cart.dart';
 import 'package:shukr/Screens/OrderDetails.dart';
 import 'package:shukr/api/NetworkRequest.dart';
 import 'package:fluttertoast/fluttertoast.dart';
+import 'dart:io' show Platform;
 class singleOffer extends StatefulWidget {
   String Name;
   bool cart;
@@ -27,8 +28,9 @@ class _singleOfferState extends State<singleOffer> {
   NetworkRequest networkRequest=new NetworkRequest();
   _singleOfferState(this.Name,this.cart,this.matjer,this.items,this.id);
   bool requestIsDone=false;
+
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { var s=MediaQuery.of(context).size;
     return InkWell(
       onTap: ()=>cart?{}:Navigator.push(context, new MaterialPageRoute(builder: (context)=>  OrderDetails(items,matjer))),
       child:Stack(
@@ -40,8 +42,8 @@ class _singleOfferState extends State<singleOffer> {
                children: [
                  cart? SizedBox(width: 5,):Container(width: 0,height: 0,),
                   new Container(
-                   height: matjer?MediaQuery.of(context).size.height>710?230:MediaQuery.of(context).size.height* 0.32: MediaQuery.of(context).size.height>710?250:MediaQuery.of(context).size.height* 0.34,
-                   width:  MediaQuery.of(context).size.width* 0.445,
+                   height:Platform.isIOS? matjer?MediaQuery.of(context).size.height>710?MediaQuery.of(context).size.height* 0.27:MediaQuery.of(context).size.height* 0.3: MediaQuery.of(context).size.height>710?MediaQuery.of(context).size.height* 0.27:MediaQuery.of(context).size.height* 0.32: matjer?MediaQuery.of(context).size.height>710?MediaQuery.of(context).size.height* 0.29:MediaQuery.of(context).size.height* 0.32: MediaQuery.of(context).size.height>710?MediaQuery.of(context).size.height* 0.29:MediaQuery.of(context).size.height* 0.34,
+                   width:Platform.isIOS? MediaQuery.of(context).size.width* 0.415: MediaQuery.of(context).size.width* 0.445,
                    margin: EdgeInsets.all(5),
                    padding: EdgeInsets.all(5) ,
                    decoration: BoxDecoration(

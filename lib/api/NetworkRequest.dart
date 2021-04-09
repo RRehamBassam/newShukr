@@ -27,11 +27,15 @@ String token ;
       print("kkkk");
       phone="+966594103577";
     }
+    if(tokenUser==null){
+      tokenUser="2342";
+    }
+    print(tokenUser);
     try {
       final response = await http.post(
         ServerAddresses.serverAddress + ServerAddresses.Login,
 //c3r49PAjQXO2yPdu_Vzft-:APA91bGoA5opX6tjndKWE-XQ7EIJdLVvHoFhlMVPIw-1kv4rBs-OFNkMJxxUttUPkm7ToVjY-cxNLklQUIEjIe-8pOTFZrrzg6JIgS-U_QfbrlmvUI51WYMqzJ__r0FLq40MsRHgyYLi
-        body: {'mobile':"$phone",'device_token':"$tokenUser",'device_type':'ios', 'password':password},
+        body: {'mobile':"$phone",'device_token':"2342$tokenUser",'device_type':'ios', 'password':password},
       );
       print('login result response: ' + response.body+ 'response.statusCode  '+ "${response.statusCode}" );
 
@@ -85,7 +89,7 @@ String token ;
     try {
       final response = await http.post(
         ServerAddresses.serverAddress + ServerAddresses.ResturantLogin,
-        body: {'mobile':phone,'device_token':"$tokenUser",'device_type':'ios', 'password':password},
+        body: {'mobile':phone,'device_token':"2342$tokenUser",'device_type':'ios', 'password':password},
       );
       print('login result response: ' + response.body+ 'response.statusCode  '+ "${response.statusCode}" );
 
