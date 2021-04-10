@@ -401,8 +401,8 @@ List Count=[1,2,3,4,5,6,7,8,9,10];
             onChanged: function,
            // style: TextStyle( color: Colors.white),
             cursorColor: Color(0xfff99b1d),
-            maxLength:textInputType? 9:25,
-            maxLengthEnforced:false,
+            // maxLength:textInputType? 9:25,
+            // maxLengthEnforced:false,
             keyboardType:textInputType?TextInputType.number:TextInputType.text,
 
             obscureText:hinttext=="***********"? _obscureText:false,
@@ -576,7 +576,7 @@ print (Output);
             child: TextFormField(
               //onChanged: (val)=>setState((){searchWord=val;}),
               cursorColor: Color(0xfff99b1d),
-              maxLength: 9,
+             // maxLength: 9,
               keyboardType:TextInputType.number,
               onChanged:(vall)=>setState(()=>Phone=vall),
               decoration: InputDecoration(

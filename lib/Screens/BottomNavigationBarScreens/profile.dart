@@ -367,7 +367,7 @@ List add=[];
                             width: MediaQuery.of(context).size.width* 0.6,
                             child: TextFormField(//onChanged: (val)=>setState((){searchWord=val;}),
                               cursorColor: Color(0xfff99b1d),
-                              maxLength: 9,
+                           //   maxLength: 9,
                               maxLengthEnforced:false,
                               autofocus: false,
                               obscureText:_obscureText,
