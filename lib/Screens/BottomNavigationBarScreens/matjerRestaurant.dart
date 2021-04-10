@@ -248,7 +248,7 @@ class _matjerRestaurantState extends State<matjerRestaurant> {
                         }).toList();
                       }),
                       cursorColor: Color(0xfff99b1d),
-                      maxLength: 9,
+                    //  maxLength: 9,
                       // keyboardType:TextInputType.number,
                       decoration: InputDecoration(
                           contentPadding: EdgeInsets.only(bottom: 15),

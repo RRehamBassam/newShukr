@@ -201,7 +201,7 @@ class _matjerState extends State<matjerUser> {
                     ),
                     child: TextFormField(//onChanged: (val)=>setState((){searchWord=val;}),
                       cursorColor: Color(0xfff99b1d),
-                      maxLength: 9,
+                     // maxLength: 9,
 
                       onChanged: (val) {
                        // val = val.toLowerCase();

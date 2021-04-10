@@ -402,6 +402,7 @@ List Count=[1,2,3,4,5,6,7,8,9,10];
            // style: TextStyle( color: Colors.white),
             cursorColor: Color(0xfff99b1d),
             maxLength:textInputType? 9:25,
+            maxLengthEnforced:false,
             keyboardType:textInputType?TextInputType.number:TextInputType.text,
 
             obscureText:hinttext=="***********"? _obscureText:false,

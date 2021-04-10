@@ -47,7 +47,7 @@ class _SignInState extends State<SignIn> {
              child: Column(
                children: [
                  Container(
-                   height: MediaQuery.of(context).size.height *0.37,
+                   height: MediaQuery.of(context).size.height *0.365,
                   child:partOne() ,
                  ),
                  Container(
@@ -128,6 +128,7 @@ return Column(
            width: MediaQuery.of(context).size.width* 0.6,
            child: TextFormField(//onChanged: (val)=>setState((){searchWord=val;}),
            cursorColor: Color(0xfff99b1d),
+             maxLengthEnforced:false,
              maxLength: 9,
              keyboardType:TextInputType.number,
              onChanged:(vall)=>setState(()=>phoneNumber=vall),
@@ -167,6 +168,7 @@ return Column(
            width: MediaQuery.of(context).size.width* 0.78,
            child: TextFormField(//onChanged: (val)=>setState((){searchWord=val;}),
              cursorColor: Color(0xfff99b1d),
+             maxLengthEnforced:false,
              maxLength: 9,
              keyboardType:TextInputType.text,
              autofocus: false,

@@ -29,7 +29,7 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.3
   flutter_rating_bar: ^3.2.0+1
-  flutter_launcher_icons: "^0.8.0"
+
   badges: ^1.1.6
   shared_preferences: ^0.5.12+4
   http: ^0.12.0+4
@@ -48,13 +48,14 @@ dependencies:
   flutter_local_notifications:
 
 dev_dependencies:
+  flutter_launcher_icons: ^0.8.0
   flutter_test:
     sdk: flutter
   flutter_launcher_name: "^0.0.1"
 flutter_icons:
   android: "launcher_icon"
   ios: true
-  image_path: "2.png"
+  image_path: "Assets/2.png"
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
 

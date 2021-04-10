@@ -78,7 +78,7 @@ class _OrderDetailsState extends State<OrderDetails> {
                 ],
               ),
             ),
-            SizedBox(height: 12,),
+            SizedBox(height: 11,),
             Container(
               margin: EdgeInsets.symmetric(horizontal:20),
               child: Align(
@@ -93,10 +93,10 @@ class _OrderDetailsState extends State<OrderDetails> {
                 ),
               ),
             ),
-            SizedBox(height: 12,),
+            SizedBox(height: 11,),
             Container(
                padding: EdgeInsets.symmetric(vertical: 16),
-              height: MediaQuery.of(context).size.height*0.25,
+              height: MediaQuery.of(context).size.height*0.24,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
                 color:  Colors.white,
