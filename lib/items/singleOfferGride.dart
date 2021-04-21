@@ -42,7 +42,7 @@ class _singleOfferState extends State<singleOffer> {
                children: [
                  cart? SizedBox(width: 5,):Container(width: 0,height: 0,),
                   new Container(
-                   height:Platform.isIOS? matjer?MediaQuery.of(context).size.height>710?MediaQuery.of(context).size.height* 0.27:MediaQuery.of(context).size.height* 0.3: MediaQuery.of(context).size.height>710?MediaQuery.of(context).size.height* 0.27:MediaQuery.of(context).size.height* 0.32: matjer?MediaQuery.of(context).size.height>710?MediaQuery.of(context).size.height* 0.29:MediaQuery.of(context).size.height* 0.32: MediaQuery.of(context).size.height>710?MediaQuery.of(context).size.height* 0.29:MediaQuery.of(context).size.height* 0.34,
+                   height:Platform.isIOS? matjer?MediaQuery.of(context).size.height>710?MediaQuery.of(context).size.height* 0.27:MediaQuery.of(context).size.height* 0.32: MediaQuery.of(context).size.height>710?MediaQuery.of(context).size.height* 0.27:MediaQuery.of(context).size.height* 0.32: matjer?MediaQuery.of(context).size.height>710?MediaQuery.of(context).size.height* 0.27:MediaQuery.of(context).size.height* 0.32: MediaQuery.of(context).size.height>710?MediaQuery.of(context).size.height* 0.27:MediaQuery.of(context).size.height* 0.34,
                    width:Platform.isIOS? MediaQuery.of(context).size.width* 0.415: MediaQuery.of(context).size.width* 0.445,
                    margin: EdgeInsets.all(5),
                    padding: EdgeInsets.all(5) ,

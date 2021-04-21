@@ -263,7 +263,7 @@ List Count=[1,2,3,4,5,6,7,8,9,10];
                               textFiled(false," الحي",Image.asset("Assets/location.png"),(val){setState(() {
                                 district=val;
                               });}),
-                               textFiled(true,"السجل المدني / رقم الإقامة",Image.asset("Assets/RecordCivilian.png"),(val){setState(() {
+                               textFiled(true,"السجل المدني / رقم الإقامة  (اختيارى)",Image.asset("Assets/RecordCivilian.png"),(val){setState(() {
                                  civil_registry=val;
                                });}),
                               new Container(

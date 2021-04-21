@@ -129,11 +129,11 @@ return Column(
            child: TextFormField(//onChanged: (val)=>setState((){searchWord=val;}),
            cursorColor: Color(0xfff99b1d),
              // maxLengthEnforced:false,
-             // maxLength: 9,
+              maxLength: 9,
              keyboardType:TextInputType.number,
              onChanged:(vall)=>setState(()=>phoneNumber=vall),
              decoration: InputDecoration(
-
+                 counterText: "",
              //  prefixIcon:  Image.asset("Assets/Mobile.png"),
                  suffixIcon:  Image.asset("Assets/Mobile.png"),
                  border: InputBorder.none,
@@ -169,13 +169,14 @@ return Column(
            child: TextFormField(//onChanged: (val)=>setState((){searchWord=val;}),
              cursorColor: Color(0xfff99b1d),
              // maxLengthEnforced:false,
-             // maxLength: 9,
+              maxLength: 9,
              keyboardType:TextInputType.text,
              autofocus: false,
              obscureText: _obscureText,
              onChanged: (vall)=>setState(()=>changePass=vall),
              decoration: InputDecoration(
                  border: InputBorder.none,
+                 counterText: "",
                  hintText: "***********",
                  icon: InkWell(
                      onTap: (){

@@ -230,7 +230,7 @@ class _matjerRestaurantState extends State<matjerRestaurant> {
                   textDirection: TextDirection.rtl,
                   child: Container(
                     padding: EdgeInsets.symmetric(vertical: 5,horizontal: 16),
-                    height:  MediaQuery.of(context).size.height * 0.07,
+                    height:  MediaQuery.of(context).size.height * 0.062,
                     width: MediaQuery.of(context).size.width *0.74,
                     decoration: BoxDecoration(
                       color: Color(0xfff5f6fb),borderRadius: BorderRadius.circular(8.00),
@@ -275,7 +275,7 @@ class _matjerRestaurantState extends State<matjerRestaurant> {
   }
   Widget search(){
     return new Container(
-      height:  MediaQuery.of(context).size.height * 0.065,
+      height:  MediaQuery.of(context).size.height * 0.062,
       width: MediaQuery.of(context).size.width *0.12,
       decoration: BoxDecoration(
         color: Color(0xfff99b1d),borderRadius: BorderRadius.circular(5.00),

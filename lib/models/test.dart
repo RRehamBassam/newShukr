@@ -78,14 +78,14 @@ class _CameraConnectState extends State<test> {
                         _imgFromGallery();
                         Navigator.of(context).pop();
                       }),
-                  new ListTile(
-                    leading: new Icon(Icons.photo_camera),
-                    title: new Text('Camera'),
-                    onTap: () {
-                      _imgFromCamera();
-                      Navigator.of(context).pop();
-                    },
-                  ),
+                  // new ListTile(
+                  //   leading: new Icon(Icons.photo_camera),
+                  //   title: new Text('Camera'),
+                  //   onTap: () {
+                  //     _imgFromCamera();
+                  //     Navigator.of(context).pop();
+                  //   },
+                  // ),
                 ],
               ),
             ),
