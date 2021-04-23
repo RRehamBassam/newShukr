@@ -104,7 +104,7 @@ return Column(
  children: [
    new Container(
 
-       height: MediaQuery.of(context).size.height*0.08,
+       height: MediaQuery.of(context).size.height*0.082,
        width: MediaQuery.of(context).size.width*0.82,
        decoration: BoxDecoration(
           color: Color(0xfff5f6fb),borderRadius: BorderRadius.circular(8.00),
@@ -125,15 +125,15 @@ return Column(
          SizedBox(width: 20,),
          Container(
           // padding: EdgeInsets.only(top: 15),
-           width: MediaQuery.of(context).size.width* 0.6,
+           width: MediaQuery.of(context).size.width* 0.55,
            child: TextFormField(//onChanged: (val)=>setState((){searchWord=val;}),
            cursorColor: Color(0xfff99b1d),
              // maxLengthEnforced:false,
-              maxLength: 9,
+             // maxLength: 9,
              keyboardType:TextInputType.number,
              onChanged:(vall)=>setState(()=>phoneNumber=vall),
              decoration: InputDecoration(
-                 counterText: "",
+                // counterText: "",
              //  prefixIcon:  Image.asset("Assets/Mobile.png"),
                  suffixIcon:  Image.asset("Assets/Mobile.png"),
                  border: InputBorder.none,
