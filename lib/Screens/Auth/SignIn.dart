@@ -95,7 +95,7 @@ class _SignInState extends State<SignIn> {
       mainAxisAlignment: MainAxisAlignment.center,
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        SizedBox(height: 25,),
+        SizedBox(height: MediaQuery.of(context).size.height>600? 25:18,),
         Image.asset("Assets/logo.png"),
       ],
     );}
